@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="carFire">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-controller="carsCtrl">
+    <a ui-sref="cars">Home/ All Cars</a>
+    <ui-view>
+
+    </ui-view>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.1/angularfire.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/carSvc.js"></script>
+    <script src="js/car/carCtrl.js"></script>
+    <script src="js/cars/carsCtrl.js"></script>
+  </body>
+</html>

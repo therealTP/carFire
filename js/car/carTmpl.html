@@ -1,0 +1,30 @@
+<h2>{{carDetails.year}} {{carDetails.make}} {{carDetails.model}}</h2>
+<p>
+  Car details:
+</p>
+
+<table style="border: 1px solid black;">
+  <tr style="font-weight: bold;">
+    <td ng-repeat="(detail, value) in carDetails">
+      {{detail}}
+    </td>
+  </tr>
+  <tr>
+    <td ng-repeat="(detail, value) in carDetails">
+      {{value}}
+    </td>
+  </tr>
+</table>
+
+<p>
+  Add Comment:
+</p>
+<input ng-model="commentText" type="text" placeholder="Comment">
+<button ng-click="addComment(id, commentText)" name="button">Comment</button>
+
+<h4>
+  Comments:
+</h4>
+<p ng-repeat="comment in comments">
+  {{comment.text}}
+</p>
